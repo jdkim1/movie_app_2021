@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react';
+import Apple from './Apple';
+import CounterCom from './CounterCom';
+import Potato from './Potato'
 
 function App() {
+
+  let text="My name is Hong gil dong"
+  let style = {
+    backgroundColor: 'red'
+  }
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Fragment>
+      <CounterCom />
+      <br/><br/>
+      <hr></hr>
+        <div style={style}>
+          <h1>Hello! {text}</h1>
+        </div>
+        <Potato />
+        <br/><br/>
+        <hr></hr>
+        <Apple />
+    </Fragment>
+  )
 }
 
 export default App;

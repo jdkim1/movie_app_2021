@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-
-
+//  commit 수정 테스트
 const Counter =(props)=>{
 
     const [count, setCount] = useState(0);
